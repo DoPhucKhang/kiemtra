@@ -4,44 +4,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini-project 1: Trang HTML chuẩn đầu tiên</title>
+  <title>TODO Bài 1 HTML</title>
 </head>
 <body>
   
   <header>
-    <h1>Mini-project 1: Trang HTML chuẩn đầu tiên</h1>
-    <p>Tìm hiểu cấu trúc cơ bản của tài liệu HTML.</p>
+    <h1>Tổng hợp kiến thức Bài 1: Ngôn ngữ HTML</h1>
+    <nav>
+      <ul>
+        <li><a href="#ly-thuyet">Lý thuyết cơ bản</a></li>
+        <li><a href="#giao-dien">Thiết kế giao diện</a></li>
+        <li><a href="#lien-he">Liên hệ hỗ trợ</a></li>
+      </ul>
+    </nav>
   </header>
 
   
   <main>
-    <section>
-      <h2>DOCTYPE là gì?</h2>
-      <p><!DOCTYPE html> dùng để khai báo tài liệu HTML5, giúp trình duyệt hiển thị đúng theo tiêu chuẩn hiện đại.</p>
+    <section id="ly-thuyet">
+      <h2>Các thẻ cấu trúc cơ bản</h2>
+      <p>Một tài liệu HTML tiêu chuẩn cần chứa các thành phần cốt lõi sau:</p>
+      <ul>
+        <li><strong>DOCTYPE:</strong> Khai báo phiên bản tài liệu.</li>
+        <li><strong>html:</strong> Phần tử gốc của trang.</li>
+        <li><strong>head:</strong> Chứa thông tin cấu hình.</li>
+        <li><strong>body:</strong> Chứa nội dung hiển thị.</li>
+      </ul>
     </section>
-    <section>
-      <h2>Thẻ html</h2>
-      <p>Thẻ html là phần tử gốc, bao bọc toàn bộ tài liệu HTML.</p>
+
+    <section id="giao-dien">
+      <h2>Bố cục thiết kế UI</h2>
+      <img src="assets/ui-design.png" alt="Ảnh chụp thiết kế UI cấu trúc trang web">
+      
+      <h3>Bảng phân vai các thẻ Semantic</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Tên thẻ</th>
+            <th>Ý nghĩa bố cục</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>header</td>
+            <td>Đầu trang web hoặc khu vực tiêu đề</td>
+          </tr>
+          <tr>
+            <td>nav</td>
+            <td>Thanh điều hướng, chứa menu</td>
+          </tr>
+          <tr>
+            <td>main</td>
+            <td>Khu vực chứa nội dung chính độc nhất</td>
+          </tr>
+          <tr>
+            <td>footer</td>
+            <td>Chân trang web, thông tin bản quyền</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
-    <section>
-      <h2>Thẻ head</h2>
-      <p>Chứa các thông tin cấu hình như title, meta và liên kết CSS.</p>
-    </section>
-    <section>
-      <h2>Thẻ body</h2>
-      <p>Chứa toàn bộ nội dung hiển thị cho người dùng.</p>
-    </section>
-    <section>
-      <h2>Thiết kế giao diện</h2>
-      <img src="assets/ui-design.png" alt="Ảnh thiết kế giao diện">
-      <p>Ảnh chụp thiết kế UI của dự án.</p>
+
+    
+    <section id="lien-he">
+      <h2>Form thu thập ý kiến học viên</h2>
+      <form action="#" method="POST">
+        <div>
+          <label for="txtHoTen">Họ và tên:</label>
+          <input type="text" id="txtHoTen" name="username" placeholder="Nhập họ tên của bạn">
+        </div>
+        <div>
+          <label for="txtEmail">Email liên hệ:</label>
+          <input type="email" id="txtEmail" name="useremail" placeholder="Nhập email của bạn">
+        </div>
+        <button type="submit">Gửi phản hồi</button>
+      </form>
     </section>
   </main>
 
   
   <footer>
-    <p>Mini-project 1 - Thiết kế Web</p>
+    <p>&copy; 2026 - Dự án học tập HTML Standard - Đỗ Phúc Khang</p>
   </footer>
-  <script src="js/script.js"></script>
 </body>
 </html>
